@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 .header-text {
-  margin-top: 30%;
+  margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
@@ -314,6 +314,10 @@ textarea {
     display: block;
   }
 
+  .header-text {
+    margin-top: 30%;
+  }
+
   nav h2 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -331,6 +335,10 @@ textarea {
     width: 10rem;
     height: 10rem;
     margin: auto;
+  }
+
+  .header-foot {
+    margin-top: 4rem;
   }
 
   .header-foot {
