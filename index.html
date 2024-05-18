@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <!-- --------------------------home----------------------------------- -->
+    <div class="header" id="home">
+      <nav>
+        <h2>Portfolio.</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header-text">
+        <div id="user_img"></div>
+        <h1>
+          My name is Zeevesh. <br />
+          Software/Web Developer
+        </h1>
+      </div>
+      <div class="header-foot">
+        <div class="header-foot-text">
+          <p>Design For</p>
+          <p>Web & Mobile</p>
+        </div>
+        <div class="header-foot-text">
+          <p>Phone</p>
+          <p>+91 - 8130528593</p>
+        </div>
+        <div class="header-foot-text">
+          <p>Drop your Message</p>
+          <p>zshaklan10499@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------about-------------------------------- -->
+    <div id="about">
+      <div class="about-col-1">
+        <h1>About Me</h1>
+        <p>
+          Software Developer with 6 months of experience and expertise in
+          working with HTML, CSS, Javascript, React and other coding languages.
+          Focused on making web apps and user-friendly websites. During my
+          internship I collaborated with the development team to implement new
+          features, fix bugs and optimize performance. Seeking an opportunity to
+          leverage my expertise to contribute to the growth and profitability of
+          a dynamic organization.
+        </p>
+        <div class="logos">
+          <img src="./images/html.png" alt="html-logo" />
+          <img src="./images/css.png" alt="css-logo" />
+          <img src="./images/js.png" alt="js-logo" />
+          <img src="./images/react.png" alt="react-logo" />
+          <img src="./images/redux.png" alt="redux-logo" />
+          <img src="./images/bootstrap.png" alt="bootstrap-logo" />
+        </div>
+      </div>
+      <div class="about-col-2">
+        <ul>
+          <li>
+            <p>HTML</p>
+            <progress id="skills" value="80" max="100">32%</progress>
+          </li>
+          <li>
+            <p>CSS</p>
+            <progress id="skills" value="70" max="100">32%</progress>
+          </li>
+          <li>
+            <p>JS</p>
+            <progress id="skills" value="50" max="100">32%</progress>
+          </li>
+          <li>
+            <p>REACT</p>
+            <progress id="skills" value="60" max="100">32%</progress>
+          </li>
+          <li>
+            <p>REDUX</p>
+            <progress id="skills" value="50" max="100">32%</progress>
+          </li>
+          <li>
+            <p>BOOTSTRAP</p>
+            <progress id="skills" value="70" max="100">32%</progress>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ----------------------------projects-------------------------- -->
+    <div id="projects">
+      <h1>My Projects</h1>
+      <div class="project">
+        <div class="project-col">
+          <a href="https://foodzilla-tan.vercel.app/">
+            <img src="./images/Foodzilla banner.png" alt="project-image" />
+            <p>Foodzilla</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------contact---------------------------------- -->
+    <div id="contact">
+      <div class="contact-col-1">
+        <h1>Contact Me</h1>
+        <h2>
+          I'd love to work together on <br />
+          your next project!
+        </h2>
+        <div class="contact-info">
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Sec 92, Gurugram</p>
+          </div>
+          <div class="mobile">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91 - 8130528593</p>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>zshaklan10499@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-col-2">
+        <div>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <input type="email" placeholder="Email" />
+        <textarea name="message" id="message" placeholder="Message"></textarea>
+        <button>Send</button>
+      </div>
+    </div>
+    <!-- ---------------------------footer-------------------------------- -->
+    <div id="footer">
+      <span>Copyright &copy; All Rights Reserved.</span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
